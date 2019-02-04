@@ -41,10 +41,5 @@ Please cite this paper in your publications if this database  helps your researc
 style="border-style: none;" alt="CC0" />
    </a>
    <br />
-   To the extent possible under law,
-   <a rel="dct:publisher"
-      href="https://github.com/alcor-lab/MotionPrimitives">
-     <span property="dct:title">Fiora Pirri</span></a>
-   has waived all copyright and related or neighboring rights to
-   <span property="dct:title">Discovery and recognition of motion 
-primitives in human activities</span>.
+   The datasets including Figures and Primitives are made available by the authors (Marta Sanzari, Valsamis Ntouskos, Fiora Pirri) under the Creative Common attribution CC0 1.0 Universal (CC0 1.0). 
+    To the extent possible under law, the authors have waived all copyright and related or neighboring rights to the datasets.
