@@ -16,6 +16,10 @@ For each instance of motion primitive are given the correspondent subject and ac
 
 The 3D positions provided in the json files corresponds to the parametrization provided in the original coordinate space in the H3.6M dataset (D3_Positions).
 
+Git Large Files has been used to manage the size of the json files dataset_subjects.json and dataset_motion_primitives.json.
+
+Additionally, in the Json file dataset_subjects_no3Dpositions.json are listed the same human motion primitives as in the file dataset_subjects.json, without the correspondent frames and 3D skeleton positions.
+
 Into the folder Primitives are extracted, for each skeleton group and each primitive label, the joint trajectories corresponding to some motion primitive examples.
 For our approach purposes only the most external joint trajectory is significant and visualized. 
 The Matlab file PlotPrimitives.m can be used to visualize the motion primitives examples.
