@@ -39,6 +39,12 @@ or
 name = 'dataset_subjects.json';
 dictionary = jsondecode(fileread(name));
 
+or 
+
+name = 'dataset_subjects_no3Dpositions.json';
+dictionary = jsondecode(fileread(name));
+
+
 Tested under Windows and Ubuntu, compatible with Matlab versions following R2006a.
 
 ### References:
