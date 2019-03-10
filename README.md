@@ -26,7 +26,7 @@ The Matlab file PlotPrimitives.m can be used to visualize the motion primitives 
 G1 stands for the group Head, G2 for the group Torso, G3 for the group Right Arm, G4 for Left Arm, G5 for Right Leg and G6 for Left Leg.
 
 ### Usage example:
-Clone or unzip the folder MotionPrimitives into your Matlab workspace.
+Clone with Git Large Files or unzip the folder MotionPrimitives into your Matlab workspace.
 Define a skeleton group using an integer N, between 1 and 6, and run into your Matlab command window:
 PlotPrimitives(N)
 
