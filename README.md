@@ -3,8 +3,18 @@
 ## Description
 Human motion primitives database relative to the paper "Discovery and recognition of motion primitives in human activities", Marta Sanzari, Valsamis Ntouskos, Fiora Pirri, members of the ALCOR lab, Sapienza University of Rome.
 
-In the Json file dataset_motion_primitives.json are listed 11195 examples of human motion primitives extracted from the dataset Human3.6M [1].
-For each example of motion primitive are given the correspondent subject, activity and milliseconds.
+
+In the Json file dataset_subjects.json are listed 11186 examples of human motion primitives extracted from the dataset Human3.6M [1].
+The Json file encodes a dictionary (namely a struct array) where the keys corresponds to a subject and an action in the Human3.6M dataset, 
+and the values are dictionaries (struct arrays) containing the correspondent human motion primitives for the given subject and action.
+For each instance of motion primitive are given the correspondent label, the milliseconds in which the motion primitive can be found in the video (for the given subject and action in the H3.6M dataset), the frames and the 3D skeleton positions.
+
+In the Json file dataset_motion_primitives.json are listed 11186 examples of human motion primitives extracted from the dataset Human3.6M [1].
+The Json file encodes a dictionary (namely a struct array) where the keys corresponds to a human motion primitive (there are a total of 54 human motion primitives), 
+and the values are dictionaries (struct arrays) containing the correspondent instances found in the H3.6M dataset.
+For each instance of motion primitive are given the correspondent subject and action, the milliseconds in which the motion primitive can be found in the video (for the given subject and action in the H3.6M dataset), the frames and the 3D skeleton positions.
+
+The 3D positions provided in the json files corresponds to the parametrization provided in the original coordinate space in the H3.6M dataset (D3_Positions).
 
 Into the folder Primitives are extracted, for each skeleton group and each primitive label, the joint trajectories corresponding to some motion primitive examples.
 For our approach purposes only the most external joint trajectory is significant and visualized. 
@@ -15,6 +25,15 @@ G1 stands for the group Head, G2 for the group Torso, G3 for the group Right Arm
 Clone or unzip the folder MotionPrimitives into your Matlab workspace.
 Define a skeleton group using an integer N, between 1 and 6, and run into your Matlab command window:
 PlotPrimitives(N)
+
+To read the json files run in a Matlab workspace:
+name = 'dataset_motion_primitives.json';
+dictionary = jsondecode(fileread(name));
+
+or
+
+name = 'dataset_subjects.json';
+dictionary = jsondecode(fileread(name));
 
 Tested under Windows and Ubuntu, compatible with Matlab versions following R2006a.
 
